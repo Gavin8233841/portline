@@ -1,0 +1,40 @@
+:root {
+  color-scheme: dark;
+  font: 15px/1.5 system-ui, sans-serif;
+  background: #1d2323;
+  color: #ecebe2;
+}
+* { box-sizing: border-box; }
+body { max-width: 1000px; margin: 0 auto; padding: 32px 24px; }
+header, .toolbar, figcaption { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+header { border-bottom: 1px solid #46514d; padding-bottom: 20px; }
+header p { margin: 0 0 3px; color: #aabbb3; font-size: 13px; }
+h1 { margin: 0; font-size: 32px; line-height: 1.2; }
+a { color: #d7e2af; text-underline-offset: 4px; }
+.toolbar { margin: 18px 0 10px; }
+.layers { display: flex; gap: 4px; padding: 3px; border: 1px solid #46514d; border-radius: 6px; }
+button { width: 66px; min-height: 34px; border: 1px solid transparent; border-radius: 4px; background: transparent; color: inherit; font: inherit; cursor: pointer; }
+button[aria-pressed="true"] { background: #d7e2af; color: #212722; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid #f3ca80; outline-offset: 3px; }
+input { accent-color: #d7e2af; }
+figure { margin: 0; }
+svg { display: block; width: 100%; max-height: 68vh; background: #242d2c; border: 1px solid #46514d; }
+svg text { fill: #ebe9d9; paint-order: stroke; stroke: #242d2c; stroke-width: .28px; font-size: 1.25px; }
+.yard { fill: #4b554e; }
+.water { fill: #334f56; }
+.solid { fill: #292c28; stroke: #758075; stroke-width: .05px; }
+.raised { fill: #83775d; fill-opacity: .7; }
+.rail { fill: #8e9278; }
+.glass { fill: #7aadb5; }
+.path { stroke: #96b9a6; stroke-width: .04px; opacity: .60; }
+.high-path { stroke: #f1c379; stroke-width: .08px; opacity: .90; }
+.west { --team: #82cbdb; fill: var(--team); }
+.east { --team: #f6aa76; fill: var(--team); }
+figcaption { justify-content: flex-start; color: #b8c3b9; font-size: 13px; margin-top: 9px; }
+figcaption i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--team); margin-right: 4px; }
+#stats { margin-left: auto; }
+@media (max-width: 480px) {
+  body { padding: 20px 15px; }
+  h1 { font-size: 26px; }
+  figcaption { column-gap: 8px; }
+}

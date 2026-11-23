@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>七号货运场 · 封港线</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./src/styles.css">
+<header>
+  <div>
+    <p>封港线 / PORTLINE</p>
+    <h1>七号货运场</h1>
+  </div>
+  <a href="https://37lg9p8tdy1p289urk1.traesite.cn/">在线试玩 ↗</a>
+</header>
+<main>
+  <div class="toolbar">
+    <div class="layers" role="group" aria-label="地图高度">
+      <button type="button" data-layer="all" aria-pressed="true">全部</button>
+      <button type="button" data-layer="ground" aria-pressed="false">地面</button>
+      <button type="button" data-layer="upper" aria-pressed="false">架高</button>
+    </div>
+    <label><input id="paths" type="checkbox" checked> 导航线</label>
+  </div>
+  <figure>
+    <svg id="map" viewBox="-31 -30 62 48" role="img" aria-label="七号货运场俯视图"></svg>
+    <figcaption>
+      <span><i class="west"></i>西侧出生点</span>
+      <span><i class="east"></i>东侧出生点</span>
+      <span id="stats" role="status"></span>
+    </figcaption>
+  </figure>
+</main>
+<script type="module" src="./src/viewer.mjs"></script>
+</html>
